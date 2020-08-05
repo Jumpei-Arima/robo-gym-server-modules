@@ -81,7 +81,7 @@ class ServerManager():
         # Launch simulation
         server_pane.send_keys(cmd="{} gui:={} server_port:={}".format(cmd, ("true" if gui else "false"),repr(grpc_port)) ,suppress_history = False)
 
-        time.sleep(10)
+        time.sleep(120)
         for i in range(10):
             time.sleep(5)
             try:
